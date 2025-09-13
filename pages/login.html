@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/login-signup.css" />
+  </head>
+
+  <body>
+    <div class="login-container">
+      <div class="loader-div">
+        <div class="loader"></div>
+      </div>
+      <div class="login-page">
+        <div class="login-page-grid">
+          <div class="login-heading">
+            <h1>LOGIN</h1>
+          </div>
+          <div>
+            <label for="Lname">Your Name</label>
+            <input type="text" required id="Lname" />
+          </div>
+          <div>
+            <label for="Lemail">Your Email</label>
+            <input type="email" required id="Lemail" />
+          </div>
+          <div>
+            <label for="Lpassword">password</label>
+            <input type="password" required id="Lpassword" />
+          </div>
+          <div>
+            <button onclick="login()">Login</button>
+            <span
+              >new to this webside ?
+              <a href="../pages/singup.html">sign up</a></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/login.js"></script>
+  </body>
+</html>

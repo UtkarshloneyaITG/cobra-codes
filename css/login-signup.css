@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  overflow: hidden;
+}
+
+.login-container,
+.signup-container {
+  background-image: url(../assets/media/bg11.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.login-page,
+.signup-page {
+  margin: 50px;
+}
+
+.loader-div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+}
+
+.signup-container {
+  background-image: url(../assets/media/bg10.jpg);
+}
+
+.login-page-grid,
+.signup-page-grid {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 50px;
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 2px solid white;
+  gap: 30px;
+  color: white;
+  margin: 0px auto;
+  /* margin: 30px; */
+}
+
+.login-page-grid>div>input,
+.signup-page-grid>div>input {
+  padding: 5px;
+  font-size: 17px;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid lightcyan;
+}
+
+.login-page-grid>div,
+.signup-page-grid>div {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-heading,
+.signup-heading {
+  text-align: center;
+  color: white;
+}
+
+.login-page-grid>div>button,
+.signup-page-grid>div>button {
+  width: 100px;
+  padding: 10px 20px;
+  margin: auto;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: 0.2s;
+}
+
+.login-page-grid>div>button:hover,
+.signup-page-grid>div>button:hover {
+  transform: scale(1.1);
+  background-color: gray;
+}
+
+.login-page-grid>div>span,
+.signup-page-grid>div>span {
+  text-align: center;
+  color: white;
+}
+
+.login-page-grid>div>span>a,
+.signup-page-grid>div>span>a {
+  color: black;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  height: 80px;
+  aspect-ratio: 1;
+  position: relative;
+  clip-path: polygon(100% 50%, 85.36% 85.36%, 50% 100%, 14.64% 85.36%, 0% 50%, 14.64% 14.64%, 50% 0%, 85.36% 14.64%, 100% 50%, 74.75% 25.25%, 50% 15%, 25.25% 25.25%, 15% 50%, 25.25% 74.75%, 50% 85%, 74.75% 74.75%, 85% 50%, 74.75% 25.25%);
+  /* box-shadow: 0px 10px 25px black; */
+  filter: blur(12px);
+}
+
+.loader:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: conic-gradient(dimgray 25%, #0000 45%, black 65%, #0000 90%, gray 100%);
+  animation: l6 2s linear infinite alternate;
+  /* border: 10px solid gray; */
+}
+
+@keyframes l6 {
+  to {
+    rotate: 1turn
+  }
+}

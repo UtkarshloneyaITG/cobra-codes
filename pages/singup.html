@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign up</title>
+    <link rel="stylesheet" href="../css/login-signup.css" />
+  </head>
+
+  <body>
+    <div class="signup-container">
+      <div class="loader-div">
+        <div class="loader"></div>
+      </div>
+      <div class="signup-page">
+        <div class="signup-page-grid">
+          <div class="signup-heading">
+            <h1>SIGN UP</h1>
+          </div>
+          <div>
+            <label for="Sname">Your Name</label>
+            <input type="text" required id="Sname" />
+          </div>
+          <div>
+            <label for="Semail">Your Email</label>
+            <input type="email" required id="Semail" />
+          </div>
+          <div>
+            <label for="Spassword">password</label>
+            <input type="password" required id="Spassword" />
+          </div>
+          <div>
+            <button onclick="signup()">sign up</button>
+            <span
+              >already have an account ?
+              <a href="../pages/login.html">login</a></span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/signup.js"></script>
+  </body>
+</html>
