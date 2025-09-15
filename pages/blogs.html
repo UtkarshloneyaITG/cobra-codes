@@ -21,10 +21,6 @@
                 <h1>Cobra <span>Codes</span></h1>
               </div>
               <div class="clock">00:00</div>
-              <div class="search-bar">
-                <input type="text" placeholder="Search" />
-                <button>Search</button>
-              </div>
               <div>
                 <button class="heading-button" onclick="settings()">
                   <?xml version="1.0" encoding="UTF-8" standalone="no"?>
@@ -75,6 +71,7 @@
                     </g>
                   </svg>
                 </button>
+                <button onclick="login_pop_up('/')" id="button_for_login">LOGIN</button>
               </div>
             </div>
             <div class="home-page-body">
@@ -170,7 +167,19 @@
                           </span>
                         </div>
                         <div>
-                          <span>MORE</span>
+                          <span>Questions</span>
+                          <span>
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg width="800px" height="800px" viewBox="0 0 400 400" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M142 125.853C155.049 97.8883 180.62 82.7645 200.381 78.4757C227.189 72.6575 249.859 84.0511 257.624 112.528C260.302 122.352 259.217 138.128 253.081 148.517C247.426 158.092 239.904 165.942 227.555 176.481C225.251 178.447 217.389 185.018 216.649 185.643C199.849 199.818 191.567 209.152 186.81 220.972C182.053 232.792 182.305 269.489 216.649 266.35"
+                                stroke="#000000" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                              <path d="M198.744 315.68C198.744 317.274 198.744 319.614 198.744 322.7" stroke="#000000"
+                                stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
                         </div>
                       </div>
                     </div>
@@ -182,27 +191,34 @@
                     <div class="page-content-grid">
                       <header>
                         <h1>Blog Manager</h1>
+
                         <nav>
                           <button onclick="toggleHome()">Home</button>
                           <button onclick="toggleNewPost()">New Post</button>
+                          <button>Categories</button>
+                          <button>About</button>
                         </nav>
                       </header>
                       <main>
+
                         <section class="recent-posts">
                           <h2>All Post</h2>
                           <div class="article-container">
-
+                            <div class="loader-div">
+                              <div class="loader"></div>
+                            </div>
                           </div>
                         </section>
                         <section class="create-post-section">
                           <div class="heading">
-                            <h2 style="text-align: center">Create blog</h2>
+                            <h2 style="text-align: center;">Create blog</h2>
                           </div>
                           <div class="create-post">
                             <div class="form">
-                              <input type="text" id="name" placeholder="Name" required />
-                              <input type="text" id="title" placeholder="Title" required />
-                              <textarea name="Content" id="Content" required> </textarea>
+                              <input type="text" id="name" placeholder="Name" required>
+                              <input type="text" id="title" placeholder="Title" required>
+                              <textarea name="Content" id="Content" required>
+          </textarea>
                               <button onclick="createPost()">Post</button>
                               <button onclick="cancel()">Cancel</button>
                             </div>
@@ -220,11 +236,9 @@
       </div>
     </section> -->
                       </main>
-
                       <footer>
                         <p>&copy; 2024 Blog Manager. All rights reserved.</p>
                       </footer>
-                      <script src="/js/blog.js"></script>
                     </div>
                   </div>
                   <div class="setting-page">
@@ -308,6 +322,7 @@
     </div>
   </div>
   </div>
+  <script src="/js/blog.js"></script>
   <script src="/js/index.js"></script>
   <script src="/js/script.js"></script>
 </body>

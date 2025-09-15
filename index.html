@@ -76,7 +76,10 @@
                 </button>
               </div>
               <div class="link-color-white">
-                <a href="pages/contect_us.html">Contact us</a>
+                <a onclick="login_pop_up('../pages/contect_us.html')">Contact us</a>
+              </div>
+              <div class="login-button">
+                <button onclick="login_pop_up('/')" id="button_for_login">LOGIN</button>
               </div>
             </div>
             <div class="home-page-body">
@@ -84,7 +87,7 @@
                 <div class="home-page-body-grid">
                   <div class="side-bar">
                     <div class="side-bar-grid">
-                      <div class="menu-icon">
+                      <div class="menu-icon" onclick="show_menu()">
                         <span>Menu</span>
                         <span class="menu-button">
                           <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
@@ -127,7 +130,7 @@
                             </svg>
                           </span>
                         </div>
-                        <div onclick="location.href = '/pages/blogs.html'">
+                        <div onclick="login_pop_up('/pages/blogs.html')">
                           <span>Blogs</span>
                           <span>
                             <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
@@ -171,8 +174,20 @@
                             </svg>
                           </span>
                         </div>
-                        <div>
-                          <span>MORE</span>
+                        <div onclick="location.href = '../pages/question.html'">
+                          <span>Questions</span>
+                          <span>
+                            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                            <svg width="30px" height="30px" viewBox="0 0 400 400" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="M142 125.853C155.049 97.8883 180.62 82.7645 200.381 78.4757C227.189 72.6575 249.859 84.0511 257.624 112.528C260.302 122.352 259.217 138.128 253.081 148.517C247.426 158.092 239.904 165.942 227.555 176.481C225.251 178.447 217.389 185.018 216.649 185.643C199.849 199.818 191.567 209.152 186.81 220.972C182.053 232.792 182.305 269.489 216.649 266.35"
+                                stroke="white" stroke-opacity="0.9" stroke-width="16" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                              <path d="M198.744 315.68C198.744 317.274 198.744 319.614 198.744 322.7" stroke="white"
+                                stroke-opacity="0.9" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
                         </div>
                       </div>
                     </div>

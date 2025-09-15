@@ -56,6 +56,15 @@ body {
   --primery-color: rgb(255, 54, 54);
 }
 
+
+.login-button>button {
+  padding: 13px 36px;
+  background-color: gray;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
 .page-width {
   max-width: 1600px;
   margin: auto;
@@ -155,7 +164,7 @@ body {
   width: 20%;
   background-color: var(--background-color-dark);
   position: absolute;
-  left: -210px;
+  left: 0px;
   transition: 0.3s;
 }
 
@@ -186,7 +195,7 @@ body {
   border: 1px solid gainsboro;
   animation: gradient-shift 1s infinite alternate;
   position: relative;
-  left: -200px;
+  left: 0;
   transition: 0.3s;
 }
 
@@ -237,7 +246,7 @@ body {
 
 .home-page-body-grid {
   display: flex;
-  padding-left: 60px;
+  padding-left: 270px;
   transition: 0.3s;
 }
 
@@ -450,4 +459,83 @@ body {
 .link-color-white>a {
   color: white;
   font-size: 15px;
+}
+
+.Questions-header {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  color: white;
+}
+
+.Questions-header>button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #979696;
+  border: 2px solid white;
+  color: white;
+}
+
+.questions-holder {
+  color: black;
+  background-color: gainsboro;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.questions-holder:hover {
+  box-shadow: 0px 10px black;
+  transform: translateY(-5px);
+}
+
+.questions-holder>div>button {
+  padding: 5px;
+  text-align: center;
+}
+
+.Questions-body {
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px
+}
+
+.Questions-body-inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 70%;
+}
+
+.Questions-body-inner button {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.question-vote-box {
+  background-color: #0005;
+  padding: 20px 10px;
+  border-radius: 10px;
+}
+
+.question-vote-box>span {
+  font-size: 20px;
+}
+
+.question {
+  font-size: 20px;
+  font-weight: 1000;
+}
+
+.quetion-asker>span {
+  color: gray;
+  font-weight: 700;
+}
+.Questions-body {
+  
 }
