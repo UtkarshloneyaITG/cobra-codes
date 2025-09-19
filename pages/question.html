@@ -32,7 +32,7 @@
                 <div class="home-page-body-grid">
                   <div class="side-bar">
                     <div class="side-bar-grid">
-                      <div class="menu-icon">
+                      <div class="menu-icon" onclick="show_menu()">
                         <span>Menu</span>
                         <span class="menu-button">
                           <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
@@ -152,22 +152,67 @@
                       <div class="Questions-grid">
                         <div class="Questions-header">
                           <h2>All Questions</h2>
-                          <button>Ask Questions</button>
+                          <button onclick="askQuestion_popUP()">Ask Questions</button>
                         </div>
                         <div class="Questions-body">
-                          <div class="questions-holder">
-                            <div class="question-vote-box">
-                              <button>
-                                +
-                              </button>
-                              <span>1</span>
-                              <button>-</button>
+                          
+                        </div>
+                      </div>
+
+                      <div class="answer-grid">
+                        <div class="answer-Header">
+                          <h2>Answers</h2>
+                        </div>
+                        <div class="see-answer-page">
+                          <div class="Question-in-answer-page">
+                            <!-- <div class="questions-holder">
+                              <div class="question-vote-box">
+                                <button>
+                                  👍
+                                </button>
+                                <span>1</span>
+                                <button>👎</button>
+                              </div>
+                              <div class="Questions-body-inner">
+                                <p class="question"></p>
+                                <p class="quetion-asker"><span></span>
+                                <p>
+                              </div>
+                            </div> -->
+                          </div>
+                          <div class="answer-in-answer-page">
+                            <!-- <div class="answer-holder">
+                              <div class="answer-vote-box">
+                                <button>
+                                  👍
+                                </button>
+                                <span>1</span>
+                                <button>👎</button>
+                              </div>
+                              <div class="answer-body-inner">
+                                <p class="answer"></p>
+                                <p class="answer-giver"><span></span>
+                                <p>
+                              </div>
+                            </div> -->
+                          </div>
+                          <div class="answer-page-your-answer-grid">
+                            <div class="answer-page-your-answer">
+                              <p>Answer</p>
+                              <textarea name="" id="answer-filled" rows="10"></textarea>
+                              <button onclick="get_answer_details()">Send</button>
+                              <button onclick="return_to_que_page()">Cancel</button>
                             </div>
-                            <div class="Questions-body">
-                            <p class="question">who is yor</p>
-                            <p class="quetion-asker">Asked by <span>Tyson</span><p>
-                              <button>See Answers</button>
-                            </div> 
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ask_question_grid">
+                        <div class="ask_question_inner"> 
+                          <div>
+                            <p>Ask Question</p>
+                            <input type="text">
+                            <button>Cancel</button>
+                            <button onclick="send_question()">send</button>
                           </div>
                         </div>
                       </div>
@@ -180,8 +225,8 @@
         </div>
       </div>
     </div>
- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>    
-<script src="/js/questions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/js/questions.js"></script>
 </body>
 
 </html>
